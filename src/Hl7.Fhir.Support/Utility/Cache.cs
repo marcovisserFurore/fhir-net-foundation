@@ -5,6 +5,8 @@
  * This file is licensed under the BSD 3-Clause license
  * available at https://raw.githubusercontent.com/FirelyTeam/fhir-net-api/master/LICENSE
  */
+ 
+ // Added comments
 
 using System;
 using System.Collections.Concurrent;
