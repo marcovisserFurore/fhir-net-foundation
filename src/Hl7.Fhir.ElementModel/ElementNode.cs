@@ -10,7 +10,6 @@ using Hl7.Fhir.Specification;
 using Hl7.Fhir.Support.Model;
 using Hl7.Fhir.Utility;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -112,6 +111,7 @@ namespace Hl7.Fhir.ElementModel
         /// <param name="provider"></param>
         /// <param name="child"></param>
         /// <param name="name"></param>
+        /// <param name="position"></param>
         private void importChild(IStructureDefinitionSummaryProvider provider, ElementNode child, string name, int? position=null)
         {
             child.Name = name ?? child.Name;
