@@ -297,6 +297,11 @@ namespace Hl7.Fhir.ElementModel
             else
                 return Source.Annotations(type);
         }
+
+        public void Foo()
+        {
+            throw new NotImplementedException();
+        }
     }
 
     [Obsolete("This class is used for internal purposes and is subject to change without notice. Don't use.")]

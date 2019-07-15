@@ -54,6 +54,11 @@ namespace Hl7.Fhir.ElementModel.Adapters
         public IEnumerable<ITypedElement> Children(string name=null) =>
             Current.Children(name).Select(c => new ElementNavToTypedElementAdapter(this, c));
 
+        public void Foo()
+        {
+            throw new NotImplementedException();
+        }
+
         IEnumerable<object> IAnnotated.Annotations(Type type) => Current.Annotations(type);
     }
 #pragma warning restore 612, 618
