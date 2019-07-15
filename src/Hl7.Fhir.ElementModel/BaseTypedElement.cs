@@ -1,4 +1,6 @@
-﻿using Hl7.Fhir.ElementModel;
+﻿// why no comments here?
+
+using Hl7.Fhir.ElementModel;
 using Hl7.Fhir.Specification;
 using Hl7.Fhir.Utility;
 using System;
