@@ -74,5 +74,9 @@ namespace Hl7.Fhir.ElementModel
 
         public override string ToString() => Value != null ? PrimitiveTypeConverter.ConvertTo<string>(Value) : "";
 
+        public void Foo()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

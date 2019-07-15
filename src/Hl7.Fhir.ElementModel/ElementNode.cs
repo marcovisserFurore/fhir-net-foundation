@@ -229,6 +229,11 @@ namespace Hl7.Fhir.ElementModel
                 : AnnotationsInternal.OfType(type);
         }
 
+        public void Foo()
+        {
+            throw new NotImplementedException();
+        }
+
         public string Location
         {
             get
