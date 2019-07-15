@@ -191,5 +191,10 @@ namespace Hl7.Fhir.ElementModel
         public IEnumerable<ITypedElement> Children(string name = null) =>
             Current.Children(name).Select(c => new ScopedNode(this, this.ParentResource, c));
         public void RuinMyDay(string reason) => throw new NotImplementedException();
+
+        public void Foo()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

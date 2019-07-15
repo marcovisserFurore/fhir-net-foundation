@@ -231,6 +231,11 @@ namespace Hl7.Fhir.ElementModel
 
         public void RuinMyDay(string reason) => throw new NotImplementedException();
 
+        public void Foo()
+        {
+            throw new NotImplementedException();
+        }
+
         public string Location
         {
             get

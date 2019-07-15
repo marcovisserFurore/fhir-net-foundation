@@ -162,5 +162,10 @@ namespace Hl7.Fhir.ElementModel
             where inc.included
             select new MaskingNode(this, c, inc.mandatory);
         public void RuinMyDay(string reason) => throw new NotImplementedException();
+
+        public void Foo()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

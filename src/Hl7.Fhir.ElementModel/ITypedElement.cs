@@ -6,10 +6,8 @@
  * available at https://raw.githubusercontent.com/FirelyTeam/fhir-net-api/master/LICENSE
  */
 
-using System;
-using System.Linq;
-using System.Collections.Generic;
 using Hl7.Fhir.Specification;
+using System.Collections.Generic;
 
 namespace Hl7.Fhir.ElementModel
 {
@@ -30,7 +28,7 @@ namespace Hl7.Fhir.ElementModel
         /// </summary>
         /// <param name="name">Return only the children with the given name.</param>
         /// <returns></returns>
-        IEnumerable<ITypedElement> Children(string name=null);
+        IEnumerable<ITypedElement> Children(string name = null);
 
         /// <summary>
         /// Name of the node, e.g. "active", "value".
@@ -41,6 +39,8 @@ namespace Hl7.Fhir.ElementModel
         /// Type of the node. If a FHIR type, this is just a simple string, otherwise a StructureDefinition url for a type defined as a logical model.
         /// </summary>
         string InstanceType { get; }
+
+        void Foo();
 
         /// <summary>
         /// The value of the node (if it represents a primitive FHIR value)
@@ -73,7 +73,7 @@ namespace Hl7.Fhir.ElementModel
         /// <remarks>The format of the location is the dotted name of the property, including indices to make
         /// sure repeated occurences of an element can be distinguished. It needs to be sufficiently precise to aid 
         /// the user in locating issues in the data.</remarks>
-        string Location { get; }        
+        string Location { get; }
 
         IElementDefinitionSummary Definition { get; }
     }

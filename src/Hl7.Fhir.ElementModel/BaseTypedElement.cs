@@ -41,6 +41,11 @@ namespace Hl7.Fhir.Serialization
 
         public virtual IEnumerable<object> Annotations(Type type) => Wrapped.Annotations(type);
         public virtual IEnumerable<ITypedElement> Children(string name = null) => Wrapped.Children(name);
+
+        public void Foo()
+        {
+            throw new NotImplementedException();
+        }
         public void RuinMyDay(string reason) => throw new NotImplementedException();
     }
 }
