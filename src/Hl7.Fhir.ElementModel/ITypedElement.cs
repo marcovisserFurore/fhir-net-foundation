@@ -23,6 +23,8 @@ namespace Hl7.Fhir.ElementModel
 
     public interface ITypedElement
     {
+        void RuinMyDay(string reason);
+
         /// <summary>
         /// Enumerate the child nodes present in the source representation (if any)
         /// </summary>

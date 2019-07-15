@@ -73,6 +73,6 @@ namespace Hl7.Fhir.ElementModel
         IReadOnlyCollection<IElementDefinitionSummary> IStructureDefinitionSummary.GetElements() => throw new NotImplementedException();
 
         public override string ToString() => Value != null ? PrimitiveTypeConverter.ConvertTo<string>(Value) : "";
-
+        public void RuinMyDay(string reason) => throw new NotImplementedException();
     }
 }

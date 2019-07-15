@@ -46,7 +46,7 @@ namespace Hl7.Fhir.ElementModel.Adapters
 
         public IEnumerable<ITypedElement> Children(string name) =>
             Current.Children(name).Select(c => new SourceNodeToTypedElementAdapter(this, c));
-
+        public void RuinMyDay(string reason) => throw new NotImplementedException();
         IEnumerable<object> IAnnotated.Annotations(Type type) => Current.Annotations(type);
     }
 }
