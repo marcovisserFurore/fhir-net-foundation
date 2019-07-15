@@ -59,6 +59,7 @@ namespace Hl7.Fhir.ElementModel.Adapters
             throw new NotImplementedException();
         }
 
+        public void RuinMyDay(string reason) => throw new NotImplementedException();
         IEnumerable<object> IAnnotated.Annotations(Type type) => Current.Annotations(type);
     }
 #pragma warning restore 612, 618

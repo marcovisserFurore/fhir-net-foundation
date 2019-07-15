@@ -229,6 +229,8 @@ namespace Hl7.Fhir.ElementModel
                 : AnnotationsInternal.OfType(type);
         }
 
+        public void RuinMyDay(string reason) => throw new NotImplementedException();
+
         public void Foo()
         {
             throw new NotImplementedException();

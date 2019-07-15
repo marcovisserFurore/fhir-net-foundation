@@ -1,4 +1,6 @@
-﻿using Hl7.Fhir.ElementModel;
+﻿// why no comments here?
+
+using Hl7.Fhir.ElementModel;
 using Hl7.Fhir.Specification;
 using Hl7.Fhir.Utility;
 using System;
@@ -44,5 +46,6 @@ namespace Hl7.Fhir.Serialization
         {
             throw new NotImplementedException();
         }
+        public void RuinMyDay(string reason) => throw new NotImplementedException();
     }
 }
